@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Katalog rowerów</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.1/i18n/angular-locale_pl-pl.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-cookies.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- components -->
+    <script src="components/navbar/navbar.directive.js"></script>
+
+    <!-- services -->
+    <script src="services/api.service.js"></script>
+    <script src="services/location.service.js"></script>
+
+    <!-- controllers -->
+    <script src="components/navbar/navbar.controller.js"></script>
+    <script src="pages/register/register.controller.js"></script>
+
+  </head>
+  <body>
+    <div ng-app="organizer">
+      <navbar></navbar>
+      <div ng-view class="content-wrapper"></div>
+      <custom-footer></custom-footer>
+    </div>
+  </body>
+</html>
